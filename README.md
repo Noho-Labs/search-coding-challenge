@@ -12,7 +12,7 @@
 
 ### Run the backend server
 
-- Make sure to have python and pip installed!
+- Make sure to have python 3.12 and pip installed!
 - Open up the `backend` folder
 
 - Install all requirements with `pip install -r requirements.txt`
