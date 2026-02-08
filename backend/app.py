@@ -25,10 +25,10 @@ class Cities(db.Model):
 def index():
     return "Flask with MySQL is set up!"
 
-@app.route('/list_cities')
-def list_cities():
+@app.route('/cities_count')
+def cities_count():
     cities = Cities.query.all()
-    return {"cities": [city.name for city in cities]}
+    return {"count": len(cities)}
 
 with app.app_context():
     db.create_all()
